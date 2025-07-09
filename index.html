@@ -21,6 +21,14 @@
     <button onclick="subtract()">計算</button>
     <p>結果：<span id="sub_result"></span></p>
   </div>
+  
+  <div>
+    <h2>掛け算</h2>
+    <input id="mul_num1" type="number"> ×
+    <input id="mul_num2" type="number">
+    <button onclick="multiply()">計算</button>
+    <p>結果：<span id="mul_result"></span></p>
+  </div>
 
   <script>
     function calc() {
@@ -33,6 +41,12 @@
       const n1 = Number(document.getElementById('sub_num1').value);
       const n2 = Number(document.getElementById('sub_num2').value);
       document.getElementById('sub_result').innerText = n1 - n2;
+    }
+    
+    function multiply() {
+      const n1 = Number(document.getElementById('mul_num1').value);
+      const n2 = Number(document.getElementById('mul_num2').value);
+      document.getElementById('mul_result').innerText = n1 * n2;
     }
   </script>
 </body>
